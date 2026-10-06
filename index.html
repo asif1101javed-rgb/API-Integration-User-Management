@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Users Management</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<main class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div>
+            <span class="eyebrow">USER MANAGEMENT</span>
+
+            <h1>Users</h1>
+
+            <p>
+                Manage and explore all registered users.
+            </p>
+        </div>
+
+        <div class="total-box">
+
+            <span>Total Users</span>
+
+            <strong id="totalUsers">0</strong>
+
+        </div>
+
+    </header>
+
+
+    <!-- TOOLBAR -->
+    <section class="toolbar">
+
+        <div class="search-wrapper">
+
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search users..."
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- LOADING -->
+    <div id="loading">
+
+        <div class="spinner"></div>
+
+        <span>Loading users...</span>
+
+    </div>
+
+
+    <!-- ERROR -->
+    <div id="error"></div>
+
+
+    <!-- USERS -->
+    <section id="userContainer" class="users"></section>
+
+
+    <!-- PAGINATION -->
+    <div class="pagination-wrapper">
+
+        <div class="page-info" id="pageInfo">
+            Page 1
+        </div>
+
+        <div id="pagination" class="pagination"></div>
+
+    </div>
+
+</main>
+
+
+<script src="./app.js"></script>
+
+</body>
+
+</html>
